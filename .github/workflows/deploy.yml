@@ -26,3 +26,5 @@ jobs:
         pelican content
         ghp-import output
         git push origin gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
