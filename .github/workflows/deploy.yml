@@ -25,6 +25,7 @@ jobs:
         git config --global user.email "deploy-action@mathcube.github.com"
         git config --global user.name "mathcube"
         git add -f output
-        git commit -m "Deploy website update"        
+        git commit -m "Deploy website update"
+        git push
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
