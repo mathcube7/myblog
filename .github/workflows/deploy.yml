@@ -26,6 +26,6 @@ jobs:
         git config --global user.name "mathcube"
         git add -f output
         git commit -m "Deploy website update"
-        git push
+        git push --set-upstream origin gh-pages
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
