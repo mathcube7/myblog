@@ -22,7 +22,7 @@ jobs:
       run: |
         git checkout -b gh-pages        
         pelican content
-        git add output
+        git add -f output
         git commit -m "Deploy website update"        
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
