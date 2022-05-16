@@ -1,6 +1,6 @@
 AUTHOR = 'mathcube'
 SITENAME = 'My Blog'
-SITEURL = ''
+SITEURL = 'https://mathcube7.github.io/myblog/'
 
 PATH = 'content'
 
