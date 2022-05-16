@@ -22,6 +22,8 @@ jobs:
       run: |
         git checkout -b gh-pages        
         pelican content
+        git config --global user.email "deploy-action@mathcube.github.com"
+        git config --global user.name "mathcube"
         git add -f output
         git commit -m "Deploy website update"        
       env:
